@@ -11,7 +11,7 @@ server.get(
                 res.send(value);
             }
         );
-        res.end();
+        res.end(); // it's required to call end() on response object after operation is done.
     }
 );
 
@@ -26,7 +26,7 @@ server.get(
                         res.send(value);
                     }
                     else{
-                        // HTTP status code for no appropriate content found
+                        // no record found in local database
                         res.send(
                             {
                                 msg: 'noRecord'
@@ -35,7 +35,7 @@ server.get(
                     }
                 }
             );
-            res.end();
+            res.end(); // it's required to call end() on response object after operation is done.
         }
         else{
             // not properly formatted
@@ -45,12 +45,12 @@ server.get(
                     msg: 'badDate'
                 }
             ); // JSON string info sent back
-            res.end();
+            res.end(); // it's required to call end() on response object after operation is done.
         }
     }
 );
 
-server.listen(
+server.listen( // server listening for incoming connection request
     8000, '0.0.0.0', () => {
         console.log('\n[+]APOD server listening at 0.0.0.0:8000 ...');
     }
