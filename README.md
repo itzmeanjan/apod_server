@@ -41,7 +41,12 @@ A simple Express App to be used as API endpoint to facilitate query of Astronomy
   
   - PortNumber can be anything greater than 1024. I set 8000, just put your choice.
   
-  
+
+## How to get Data ?
+
+  So I've opened up another [repo](https://github.com/itzmeanjan/apod_fetcher), which will help you in fetching **Astronomy Picture of the Day** from NASA.
+
+
 ## Courtesy ::
   Last but not least, thanks to [NASA](https://www.nasa.gov/) for providing us with such a great service([NASA APOD](https://apod.nasa.gov/apod/)), which could be used as a great resource for learning thing related to Astronomy. 
   Thanks to [NodeJS](https://nodejs.org/en/), [NPM](https://www.npmjs.com/) and [ExpressJS](http://expressjs.com/) for providing such a great ecosystem, which has made it really easy to write web apps/ API endpoints, with few lines of code.
