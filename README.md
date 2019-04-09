@@ -22,20 +22,26 @@ A simple Express App to be used as API endpoint to facilitate query of Astronomy
 
   - To run this app on you computer first clone this repo.
     
-    ```>> git clone https://github.com/itzmeanjan/apod_server.git```
+    ```bash
+    >> git clone https://github.com/itzmeanjan/apod_server.git
+    ```
   
   - Make sure you've latest version of [NodeJS](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed on your system.
   - Download all project dependencies by running, which will download all dependencies by reading *package.json*.
     
-    ```>> npm install```
+    ```bash
+    >> npm install
+    ```
     
   - Then run [apod_server.js](https://github.com/itzmeanjan/apod_server/blob/master/apod_server.js).
     
-    ```>> node apod_server.js```
+    ```bash
+    >> node apod_server.js
+    ```
     
   - So the server is up and running now.
   
-  - To test, head to your browser, and type ```IPAddress:PortNumber/apod```, and you see a lot of data.
+  - To test, head to your browser, and type *IPAddress:PortNumber/apod*, and you see a lot of data.
   
   - Here IPAddress is IP of your computer in localnetwork, which is running the express app.
   
